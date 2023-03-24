@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl" style="scroll-behavior: smooth;">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Wielkanoc 2023">
+        <meta name="keywords" content="wielkanoc, zmartwychwstanie, święta">
+        <meta name="robots" content="all"/>
+        <meta name="author" content="Paweł Kowalczyk">
+        <title>Wielkanoc 2023</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="trawa.avif">
+    </head>
+    <body style="background-color: #b3d384; background-image: url(trawa.webp); background-size: 10%; background-repeat: space;">
+        <style>
+            #container {
+                display: flex;
+                height: 2150px;
+                width: 100%;
+
+            }
+
+            #main {
+                color:beige;
+                text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+                margin: 0.5em;
+                padding: 0.3em;
+                font-size: 6em;
+                font-family: 'Delicious Handrawn', cursive;
+                text-align: center;
+                background-color: #BDE8EF;
+                width: 80%;
+                height: 90%;
+                border-radius: 0.5em;
+                margin: 1em;
+                align-self: center;
+                border-style: solid;
+                border-color: white;
+            }
+            
+            .animation {
+                text-align: center;
+                width: 10%;
+                height: 2150px;
+                display: flex;
+            }
+
+            #a1 {
+                text-align: center;
+                align-self: flex-end;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                transform-origin: bottom;
+                margin: 0 auto 0 auto;
+                width: 100px;
+                height: 100px;
+                animation-name: jump1;
+                animation-timing-function: ease;
+            }
+
+            #a2 {
+                text-align: center;
+                align-self: flex-end;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                transform-origin: bottom;
+                margin: 0 auto 0 auto;
+                width: 100px;
+                height: 100px;
+                animation-name: jump2;
+                animation-timing-function: ease;
+            }
+
+            @keyframes jump1 {
+                0%   { transform: scale(1,1)      translateY(0); }
+                10%  { transform: scale(1.1,.9)   translateY(0); }
+                30%  { transform: scale(.9,1.1)   translateY(-600px); }
+                50%  { transform: scale(1.05,.95) translateY(0); }
+                57%  { transform: scale(1,1)      translateY(-7px); }
+                64%  { transform: scale(1,1)      translateY(0); }
+                100% { transform: scale(1,1)      translateY(0); }
+            }
+
+            @keyframes jump2 {
+                0%   { transform: scale(1,1)      translateY(0); }
+                20%  { transform: scale(1.1,.9)   translateY(0); }
+                40%  { transform: scale(.9,1.1)   translateY(-1030px); }
+                50%  { transform: scale(1,1)      translateY(-1030px); }
+                57%  { transform: scale(1,1)      translateY(0); }
+                64%  { transform: scale(1.05,.95) translateY(-7px); }
+                100% { transform: scale(1,1)      translateY(0); }
+            }
+
+            #button {
+                text-decoration: none;
+                background-color: #E0CDFF;
+                border-radius: 0.5em; 
+                border-style: solid;
+                padding: 20px; 
+                border-color: beige; 
+                padding-left: 40px; 
+                padding-right: 40px; 
+                font-size: 30px; 
+                color: beige;
+            }
+        </style>
+        <div id="container">
+            <div class="animation">
+                <div id="a1">
+                    <img src="zajac.avif" alt="Zając" style="width: 100px;">
+                </div>
+            </div>
+            <div id="main">
+                <hr />
+                <hr />
+                Wesołych Świąt Wielkanocnych 2023
+                <img src="trawa.avif" alt="Trawa" style="height: 15%">
+                <br />
+                <a id="button" href="#img">Życzenia</a>
+                <hr />
+                <hr />
+                <div id="zyczenia" style="font-size: 40px;">
+                    <div style="height: 300px;"></div>
+                    <p>
+                        Święto Wielkiej Nocy to czas otuchy i nadziei,
+                        czas odradzania się wiary w siłę Chrystusa i w siłę człowieka.
+                        Życzę, aby święta wielkanocne przyniosły radość,
+                        pokój oraz wzajemną życzliwość.
+                        By stały się źródłem wzmacniania ducha!
+                    </p>
+                    <img id="img" src="pisanki.png" alt="Pisanki" style="height:350px">
+                </div>
+            </div>
+            <div class="animation">
+                <div id="a2">
+                    <img src="zajac.avif" alt="Zając" style="width: 100px; -webkit-transform: scaleX(-1); transform: scaleX(-1);">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
